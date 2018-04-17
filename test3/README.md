@@ -63,7 +63,7 @@ package "library" #DDDDDD {
 ![系统类](https://github.com/liyue0408/is_analysis/blob/master/test3/%E7%B3%BB%E7%BB%9F%E7%B1%BB.png)
 
 ## 2. 图书管理系统对象图:
-##### 流程一：借书记录
+##### 2.1：借书记录
 ##### uml源码如下
 ````
 @startuml
@@ -82,7 +82,7 @@ object order {
 ![借书记录](https://github.com/liyue0408/is_analysis/blob/master/test3/%E5%80%9F%E4%B9%A6%E8%AE%B0%E5%BD%95.PNG)
 
 
-流程二：图书对象
+2.2：图书对象
 ````
 @startuml
 
@@ -104,7 +104,7 @@ object order {
 
 
 
-##### 流程三：管理员对象
+##### 2.3：管理员对象
 
 ````
 @startuml
@@ -121,7 +121,7 @@ object BookManager {
 
 
 
-##### 流程四：系统对象
+##### 2.4：系统对象
 
 ````
 @startuml
@@ -191,10 +191,10 @@ package "library" #DDDDDD {
 
 ![系统对象](https://github.com/liyue0408/is_analysis/blob/master/test3/%E7%B3%BB%E7%BB%9F%E5%AF%B9%E8%B1%A1.png)
 
-##### 记录如下
 
 
-##### 流程五：读者对象
+
+##### 2.5：读者对象
 
 ````
 @startuml
@@ -203,9 +203,9 @@ package "library" #DDDDDD {
     		password = "liyue123
     	}
 ````
-![读者对象](https://github.com/liyue0408/is_analysis/blob/master/test3/%E8%AF%BB%E8%80%85%E5%AF%B9%E8%B1%A1.puml)
+![读者对象](https://github.com/liyue0408/is_analysis/blob/master/test3/%E8%AF%BB%E8%80%85%E5%AF%B9%E8%B1%A1.png)
 
-#####流程六：还书
+#####2.5：还书
 ````
 @startuml
 	object return {
@@ -214,4 +214,6 @@ package "library" #DDDDDD {
                 还书日期 = "2018-4-3"
                 }
 ````
+![还书](https://github.com/liyue0408/is_analysis/blob/master/test3/%E8%BF%98%E4%B9%A6.png)
+
 
