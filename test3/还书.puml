@@ -1,7 +1,0 @@
-@startuml
-object return {
-            读者姓名 = "李玥"
-            图书ISBN号 = "22-32-19"
-            还书日期 = "2018-4-3"
-            }
-@enduml
