@@ -23,9 +23,7 @@ package "library" #DDDDDD {
 		+预订图书()
 		+取消预订图书()
 	}
-	class visitor {
-		+查询图书信息()
-	}
+	
 
 	class book {
 	 	-书名
@@ -34,7 +32,6 @@ package "library" #DDDDDD {
 	 	-库存
 	 	-价格
 	 	-出版社
-	 	-简介
 	 	-作者
 	}
 
@@ -49,10 +46,9 @@ package "library" #DDDDDD {
 
 	book .. note1
 	note1 .. 借书记录
-	visitor <|-- reader : 注册登录
 	reader "1" *-- "N" order : 借书和还书
 	order "1" o-- "1" book : 一一对应
-	order "N" -- "1" libraryManager : 登记和归还
+	order "N" -- "1" BookManagerr : 登记和归还
 	BookManager "N" -- "N" book : 维护图书
 	BookManager "N" -- "N" reader : 维护读者信息
 
