@@ -60,7 +60,7 @@ package "library" #DDDDDD {
 @enduml
 ````
 ### 1.2 截图如下：
-![系统类](https://github.com/liyue0408/is_analysis/blob/master/test3/%E7%B3%BB%E7%BB%9F%E7%B1%BB.png)
+![系统类](系统类.png)
 
 ## 2. 图书管理系统对象图:
 ##### 2.1：借书记录
