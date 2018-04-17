@@ -1,7 +1,0 @@
-@startuml
-
-object BookManager {
-		 username = "liyue"
-		 password = "liyue123"
-}
-@enduml
