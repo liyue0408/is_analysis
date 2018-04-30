@@ -29,7 +29,7 @@ BorrowBook->Title:查找图书类()
 note right:先查询类目再查询详细书籍
 activate Title
 Title->BorrowBook:return true
-Title->Book:查询图书存在且库存足够库存
+Title->Book:查询图书存在且库存足够
 activate Book
 Book->Title:return true
 deactivate Admin
