@@ -57,7 +57,7 @@
 1. 借阅信息API
 
 - 功能：用于获取所有图书信息
-- 请求地址： http://localhost:8080/BookManagementSystem/Borrow_book.jsp
+- 请求地址： http://localhost:8080/BookManagementSystem/BooksMessage.jsp
 - 请求方法：POST
 - 请求参数：
 
