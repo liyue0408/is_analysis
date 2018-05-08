@@ -54,7 +54,7 @@
 - 顺序图参见：图书顺序图
 - API接口如下：
 
-1. 借阅信息API
+1. 图书信息API
 
 - 功能：用于获取所有图书信息
 - 请求地址： http://localhost:8080/BookManagementSystem/BooksMessage.jsp
