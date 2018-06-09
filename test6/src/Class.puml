@@ -1,0 +1,102 @@
+@startuml
+title 基于GitHub的实验管理平台--类图
+
+class users{
+    <b>user_id</b> （用户ID）
+    user_name （用户真实姓名）
+    github_username （用户GitHub账号）
+    password （用户密码）
+    --
+}
+
+
+class teachers{
+    <b>teacher_id</b> （老师编号）
+    <b>user_id</b> （用户ID）
+    teacher_name (老师姓名)
+    sex（老师性别）
+    age（老师年龄）
+    department （所属部门）
+    --
+}
+
+class students{
+    <b>student_id</b> （学号）
+    <b>user_id</b> (用户ID)
+    student_name(学生姓名)
+    sex (学生性别)
+    age (学生年龄)
+    class_id（班级）
+    --
+}
+
+class Class{
+    <b>Class_id</b>(班级)
+    major (专业)
+    grade(年级)
+    --
+}
+
+class courses {
+    <b>course_id</b> (课程编号)
+    course_name (课程名)
+    date (开课学年)
+    term (开课学期)
+    college (开课学院)
+    --
+}
+
+
+
+class courseInfo{
+    <b>courseInfo_id</b> (学生上课编号)
+    <b>student_id</b> (学号)
+    --
+}
+
+class tests {
+    <b>test_id</b> （实验编号）
+    course_id (课程id)
+    test_name(实验名称)
+    time (发布时间)
+    endtime (截止时间)
+    --
+}
+
+class Score {
+    <b>student_id</b> （学号）
+    <b>test_id</b> （实验编号）
+    score（分数）
+    mark （评价）
+    date （评改日期）
+    --
+}
+
+class teacher_Scores{
+    <b>teacher_id</b>(老师编号)
+    <b>student_id</b>(学号)
+    student_name(学生姓名)
+    course_id(课程编号)
+    test_id(实验编号)
+    score(分数)
+    mark(评价)
+    date（评改日期）
+    --
+}
+
+
+
+
+users <|-- students
+users <|-- teachers
+teachers "1"-- "1"teacher_Scores
+teacher_Scores -- Score
+students "n"--"n" courseInfo
+students "1" -- "n"  courses
+students "n" -- "1" Class
+tests "1" -- "n"  Score
+tests "n" -- "1" courses
+
+
+
+@enduml
