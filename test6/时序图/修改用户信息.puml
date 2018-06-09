@@ -1,0 +1,9 @@
+@startuml
+actor users
+users -> 管理系统:成功登陆
+users->个人信息:个人信息查询
+管理系统-->users:显示个人信息
+users-> 管理系统:输入新信息，进行修改
+管理系统-> 个人信息:修改个人信息
+管理系统 -->users:修改成功
+@enduml

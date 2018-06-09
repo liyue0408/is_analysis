@@ -1,0 +1,20 @@
+@startuml
+title 成绩列表时序图
+
+actor users as u
+
+
+u -> Score:查询成绩信息
+
+alt 用户是学生
+    u ->Score:根据学号查询成绩信息
+    Score -->u:返回学生成绩信息
+else 用户是老师
+    u ->Courses:根据课程查找
+    Courses->Tests:根据课程实验查找
+    u -> Score: 查询成绩
+    Courses -> Students: 查询学生信息
+    Students --> u:返回学生信息
+    Score --> u: 5.返回所有学生实验成绩
+end
+@enduml

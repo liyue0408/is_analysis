@@ -1,0 +1,11 @@
+@startuml
+title 教师列表时序图
+actor  users as u
+u -> 管理系统:登陆成功
+管理系统->Teachers:查看老师信息
+Teachers -->管理系统:返回老师信息
+管理系统-->u:显示信息
+管理系统 ->Courses:选择课程
+Courses -->管理系统:返回结果
+
+@enduml

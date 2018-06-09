@@ -1,0 +1,16 @@
+@startuml
+title 登录时序图
+actor 用户 as user
+participant Login as l
+participant Users as u
+
+
+user -> l: 1.进入登录页面
+l -> u: 2.输入用户名和密码
+l --> l: success
+u --> u: 3.检查用户输入信息
+u -->user: 4.登录成功
+
+
+
+@enduml

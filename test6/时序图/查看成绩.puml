@@ -1,0 +1,11 @@
+@startuml
+title 查看成绩顺序图
+
+actor users
+users->管理系统:成功登陆
+管理系统->Students:获取个人信息
+Students -> Score: 查看成绩和评语
+Score -> tests:实验成绩
+tests --> 管理系统: 每个实验的信息、成绩和评语
+管理系统-->users:显示信息
+@enduml

@@ -1,0 +1,16 @@
+@startuml
+title 评定成绩顺序图
+actor users
+
+
+== 查看成绩 ==
+Teachers -> Students : 老师选择要评定的学生
+Students -> Score :获取成绩
+Score -> tests :获取实验
+tests --> Teachers: 返回实验的信息
+== 评定成绩 ==
+Teachers -> Score :  评定每个实验的成绩
+
+
+
+@enduml
